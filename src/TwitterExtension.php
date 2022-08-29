@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace CachetHQ\Twitter;
 
-use League\CommonMark\ConfigurableEnvironmentInterface;
+use League\CommonMark\Environment\EnvironmentBuilderInterface;
 use League\CommonMark\Extension\ExtensionInterface;
 
 /**
@@ -47,7 +47,7 @@ class TwitterExtension implements ExtensionInterface
      *
      * @return void
      */
-    public function register(ConfigurableEnvironmentInterface $environment)
+    public function register(EnvironmentBuilderInterface $environment)
     {
         $environment->addInlineParser($this->parser);
     }
