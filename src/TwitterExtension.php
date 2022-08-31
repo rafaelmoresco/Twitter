@@ -47,7 +47,7 @@ class TwitterExtension implements ExtensionInterface
      *
      * @return void
      */
-    public function register(EnvironmentBuilderInterface $environment)
+    public function register(EnvironmentBuilderInterface $environment):void
     {
         $environment->addInlineParser($this->parser);
     }
