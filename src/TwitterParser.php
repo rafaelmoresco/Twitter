@@ -25,6 +25,9 @@ use League\CommonMark\Parser\Inline\InlineParserMatch;
  */
 class TwitterParser implements InlineParserInterface
 {
+    
+    protected InlineParserMatch $var;
+    
     /**
      * Get the characters that must be matched.
      *
@@ -42,7 +45,7 @@ class TwitterParser implements InlineParserInterface
      */
     public function getMatchDefinition(): InlineParserMatch
     {
-        return $this;
+        return $var;
     }
 
     /**
