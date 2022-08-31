@@ -1,6 +1,6 @@
 # Cachet Twitter
 
-A Twitter handle parser for Laravel 8.
+A continuation of CachetHQ Twitter handle parser, now for Laravel 8.
 
 
 ## Installation
@@ -15,7 +15,7 @@ $ composer require rafaelmoresco/twitter
 
 Once installed, if you are not using automatic package discovery, then you need to register the `CachetHQ\Twitter\TwitterServiceProvider` service provider in your `config/app.php`.
 
-If you'd like to use with [Laravel Markdown](https://github.com/GrahamCampbell/Laravel-Markdown), you'll need to add the `RafaelMoresco\Twitter\TwitterExtension` class to the `'extensions'` array in your `config/markdown.php` file.
+If you'd like to use with [Laravel Markdown](https://github.com/GrahamCampbell/Laravel-Markdown), you'll need to add the `CachetHQ\Twitter\TwitterExtension` class to the `'extensions'` array in your `config/markdown.php` file.
 
 
 ## Security

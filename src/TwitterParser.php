@@ -16,6 +16,7 @@ namespace CachetHQ\Twitter;
 use League\CommonMark\Parser\InlineParserContext;
 use League\CommonMark\Extension\CommonMark\Node\Inline\Link;
 use League\CommonMark\Parser\Inline\InlineParserInterface;
+use League\CommonMark\Parser\Inline\InlineParserMatch;
 
 /**
  * This is the twitter parser class.
@@ -32,6 +33,16 @@ class TwitterParser implements InlineParserInterface
     public function getCharacters(): array
     {
         return ['@'];
+    }
+
+    /**
+     * Created to make function non abstract
+     * 
+     * @return InlineParserMatch
+     */
+    public function getMatchDefinition(): InlineParserMatch
+    {
+        return $this;
     }
 
     /**
