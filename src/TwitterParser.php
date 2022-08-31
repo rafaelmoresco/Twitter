@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace CachetHQ\Twitter;
 
-use League\CommonMark\InlineParserContext;
-use League\CommonMark\Inline\Element\Link;
-use League\CommonMark\Inline\Parser\InlineParserInterface;
+use League\CommonMark\Parser\InlineParserContext;
+use League\CommonMark\Extension\CommonMark\Node\Inline\Link;
+use League\CommonMark\Parser\Inline\InlineParserInterface;
 
 /**
  * This is the twitter parser class.
